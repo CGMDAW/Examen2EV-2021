@@ -36,7 +36,7 @@ namespace Ejercicio10
             double euros, dolares;
 
             euros = double.Parse(tImporte.Text);
-            dolares = euros * KConv1_CGM_2021;
+            dolares = euros / KConv1_CGM_2021;
 
             tResultado.Text = dolares.ToString();
         }
