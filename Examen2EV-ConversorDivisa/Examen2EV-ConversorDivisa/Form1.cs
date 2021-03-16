@@ -13,7 +13,7 @@ namespace Ejercicio10
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
          // Declaramos la constante que convierte entre euros y dolares.
