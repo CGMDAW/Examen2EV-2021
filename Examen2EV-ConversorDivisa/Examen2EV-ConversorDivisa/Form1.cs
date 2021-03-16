@@ -18,15 +18,15 @@ namespace Ejercicio10
 
          // Declaramos la constante que convierte entre euros y dolares.
         //
-        const double CONV1 = 0.826;  // 1 dolar, 0,826 euros
-        const double CONV2 = 1.1485; // 1 libra, 1,1485 euros
+        const double KConv1_CGM_2021 = 0.826;  // 1 dolar, 0,826 euros
+        const double KConv2_CGM_2021 = 1.1485; // 1 libra, 1,1485 euros
 
         private void btDolaresAEuros_Click(object sender, EventArgs e)
         {
             double euros, dolares;
 
             dolares = double.Parse(tImporte.Text);
-            euros = dolares * CONV1;
+            euros = dolares * KConv1_CGM_2021;
 
             tResultado.Text = euros.ToString();
         }
@@ -36,7 +36,7 @@ namespace Ejercicio10
             double euros, dolares;
 
             euros = double.Parse(tImporte.Text);
-            dolares = euros * CONV1;
+            dolares = euros * KConv1_CGM_2021;
 
             tResultado.Text = dolares.ToString();
         }
@@ -46,7 +46,7 @@ namespace Ejercicio10
             double euros, libras;
 
             libras = double.Parse(tImporte.Text);
-            euros = libras * CONV1;
+            euros = libras * KConv1_CGM_2021;
 
             tResultado.Text = euros.ToString();
         }
@@ -56,7 +56,7 @@ namespace Ejercicio10
             double euros, libras;
 
             euros = double.Parse(tResultado.Text);
-            libras = euros / CONV1;
+            libras = euros / KConv1_CGM_2021;
 
             tImporte.Text = libras.ToString();
         }
