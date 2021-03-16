@@ -46,7 +46,7 @@ namespace Ejercicio10
             double euros, libras;
 
             libras = double.Parse(tImporte.Text);
-            euros = libras * KConv1_CGM_2021;
+            euros = libras * KConv2_CGM_2021;
 
             tResultado.Text = euros.ToString();
         }
